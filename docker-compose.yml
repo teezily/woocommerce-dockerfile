@@ -1,0 +1,13 @@
+web:
+  build: .
+  environment:
+    - MYSQL_ROOT_PASSWORD=foo
+  ports:
+    - "8080:80"
+  links:
+    - mysql
+
+mysql:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: example
