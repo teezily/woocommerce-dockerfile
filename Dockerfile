@@ -1,7 +1,7 @@
-FROM wordpress:latest
+FROM wordpress:4.4.1
 
-ENV WOOCOMMERCE_VERSION 2.4.13
-ENV WOOCOMMERCE_UPSTREAM_VERSION 2.4.13
+ENV WOOCOMMERCE_VERSION 2.5.2
+ENV WOOCOMMERCE_UPSTREAM_VERSION 2.5.2
 
 RUN apt-get -y update \
     && apt-get -y install unzip wget \
