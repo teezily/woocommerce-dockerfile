@@ -1,7 +1,7 @@
-FROM wordpress:4.5.1
+FROM wordpress:5.2.2-php7.1-apache
 
-ENV WOOCOMMERCE_VERSION 2.5.5
-ENV WOOCOMMERCE_UPSTREAM_VERSION 2.5.5
+ENV WOOCOMMERCE_VERSION 3.6.5
+ENV WOOCOMMERCE_UPSTREAM_VERSION 3.6.5
 
 RUN apt-get -y update \
     && apt-get -y install unzip wget \
